@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "CodeCommit squash merge improve",
+  "version": "4",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.console.aws.amazon.com/codesuite/codecommit/repositories/*/pull-requests/*/merge?region=*"
+      ],
+      "js": ["script.js"]
+    }
+  ]
+}
